@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'plugin-example';
+  show:boolean=true;
+
+  btnClicked($event: any) {
+    console.log($event)
+    alert('button clicked')
+  }
 }
